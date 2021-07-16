@@ -1,0 +1,7 @@
+{% extends "hello/layout.html" %} {% block title %}
+<title>Hello, Django</title> {% endblock %} {% block content %}
+<span class="message">
+	<strong>Hello there, {{ name }}!</strong> It's {{ date | date:"l, d F, Y" }}
+	at {{ date | time:"H:i:s" }}
+</span>
+{% endblock %}
